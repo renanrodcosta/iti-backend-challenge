@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Iti.BackendChallenge.WebAPI
 {
+#pragma warning disable CS1591
     public class Program
     {
         public static void Main(string[] args)
@@ -17,4 +18,5 @@ namespace Iti.BackendChallenge.WebAPI
                     webBuilder.UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591
 }

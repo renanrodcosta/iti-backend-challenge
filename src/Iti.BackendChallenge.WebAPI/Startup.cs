@@ -1,3 +1,4 @@
+using Iti.BackendChallenge.WebAPI.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +20,7 @@ namespace Iti.BackendChallenge.WebAPI
         {
             services.AddControllers();
             services.AddHealthChecks();
+            services.AddSwaggerSetup();
             services.AddScoped<UseCases.ValidateStrongPassword>();
         }
 
@@ -28,6 +30,8 @@ namespace Iti.BackendChallenge.WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwaggerSetup();
 
             app.UseRouting();
 
