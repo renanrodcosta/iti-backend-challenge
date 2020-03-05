@@ -1,4 +1,4 @@
-﻿using Iti.BackendChallenge.WebAPI.ApiModels.Password;
+﻿using Iti.BackendChallenge.WebAPI.ApiModels;
 using Iti.BackendChallenge.WebAPI.UseCases;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

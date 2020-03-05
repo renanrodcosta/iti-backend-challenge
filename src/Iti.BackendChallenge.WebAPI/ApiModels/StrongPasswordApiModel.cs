@@ -1,5 +1,5 @@
 
-namespace Iti.BackendChallenge.WebAPI.ApiModels.Password
+namespace Iti.BackendChallenge.WebAPI.ApiModels
 {
     public class StrongPasswordApiModel
     {
