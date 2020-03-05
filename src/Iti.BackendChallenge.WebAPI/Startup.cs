@@ -21,7 +21,7 @@ namespace Iti.BackendChallenge.WebAPI
             services.AddControllers();
             services.AddHealthChecks();
             services.AddSwaggerSetup();
-            services.AddScoped<UseCases.ValidateStrongPassword>();
+            services.AddDependencyInjectionSetup();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
